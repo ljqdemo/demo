@@ -1,4 +1,4 @@
-package com.example.demo.async;
+package com.example.demo.spring.annotation.async;
 
 import com.example.demo.DemoApplication;
 import org.junit.Test;

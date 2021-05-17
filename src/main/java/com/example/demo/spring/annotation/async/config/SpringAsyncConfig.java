@@ -1,4 +1,4 @@
-package com.example.demo.async.config;
+package com.example.demo.spring.annotation.async.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.AsyncConfigurer;

@@ -1,10 +1,7 @@
-package com.example.demo.async;
+package com.example.demo.spring.annotation.async;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-import sun.misc.Cleaner;
 
 /**
  * @author gino
