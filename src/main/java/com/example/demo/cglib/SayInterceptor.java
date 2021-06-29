@@ -11,6 +11,7 @@ import java.lang.reflect.Method;
  */
 public class SayInterceptor implements MethodInterceptor {
 
+
     /**
      * 代理方法
      * @param o
@@ -21,6 +22,7 @@ public class SayInterceptor implements MethodInterceptor {
      * @throws Throwable
      */
     @Override
+
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         //方法调用前处理的业务
         System.out.println("Before "+method.getName()+"doing");
@@ -30,4 +32,5 @@ public class SayInterceptor implements MethodInterceptor {
         System.out.println("After "+ method.getName()+" doing");
         return result;
     }
+
 }
