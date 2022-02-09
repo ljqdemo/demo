@@ -2,6 +2,10 @@ package com.example.demo;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.time.LocalDateTime;
+import java.util.Vector;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.atomic.AtomicLongArray;
 
 /**
  * @author gino
@@ -26,4 +30,19 @@ public class LogHandler implements InvocationHandler {
 
         return result;
     }
+
+    public static void main(String[] args) {
+        AtomicLong count=new AtomicLong(0);
+      Long result=  count.incrementAndGet();
+        System.out.println(result);
+
+        Vector v=new Vector(1);
+        v.add("10");
+        v.addElement("20");
+        for (Object o : v) {
+            System.out.println(o);
+        }
+
+    }
+
 }

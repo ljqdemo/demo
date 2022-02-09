@@ -1,0 +1,18 @@
+server:
+  port: 8883
+spring:
+  datasource:
+  username: root
+  password: ljq0614
+  url: jdbc:mysql://localhost:3306/mydb?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.example.demo.mybatis.entity
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug

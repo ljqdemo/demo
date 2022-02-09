@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.alibaba.nacos.common.util.UuidUtils;
+//import com.alibaba.nacos.common.util.UuidUtils;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.CertAlipayRequest;
@@ -50,7 +50,7 @@ public class AliPlaycContoller {
         AlipayTradeAppPayModel model = new AlipayTradeAppPayModel();
         model.setBody("我是测试数据");
         model.setSubject("App支付测试Java");
-        model.setOutTradeNo(UuidUtils.generateUuid());
+        //model.setOutTradeNo(UuidUtils.generateUuid());
         model.setTimeoutExpress("30m");
         model.setTotalAmount("0.01");
         model.setProductCode("QUICK_MSECURITY_PAY");
